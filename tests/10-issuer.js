@@ -82,7 +82,7 @@ describe('Issue Credential - Data Integrity', function() {
         const body = createRequestBody({issuer});
         const invalidContextTypes = [{foo: true}, 4, false, null];
         for(const invalidContextType of invalidContextTypes) {
-          body.credential['@context'] = invalidContextType;
+          body.credential['@context'] = [invalidContextType];
           const {result, error} = await issuer.post({json: {...body}});
           shouldThrowInvalidInput({result, error});
         }
@@ -115,7 +115,7 @@ describe('Issue Credential - Data Integrity', function() {
         const body = createRequestBody({issuer});
         const invalidCredentialTypes = [null, true, 4, []];
         for(const invalidCredentialType of invalidCredentialTypes) {
-          body.credential.type = invalidCredentialType;
+          body.credential.type = [invalidCredentialType];
           const {result, error} = await issuer.post({json: {...body}});
           shouldThrowInvalidInput({result, error});
         }
