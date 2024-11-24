@@ -169,13 +169,13 @@
     <section class="informative" id="conformance-testing-results">
       <h2> Conformance Testing Results </h2>
       <p>
-      Tests passed 138/170 81%
+      Tests passed 126/170 74%
       </p>
       <p>
-      Tests failed 32/170 19%
+      Tests failed 44/170 26%
       </p>
       <p>
-      Failures 32
+      Failures 44
       </p>
       <p>
       Tests skipped 12
@@ -184,7 +184,7 @@
       Total tests 182
       </p>
       <p>
-        These tests were run on <time>17 November 2024 at 5:09 am UTC</time>
+        These tests were run on <time>24 November 2024 at 5:10 am UTC</time>
       </p>
       <section class="informative" id="Key">
         <h3>Key</h3>
@@ -317,11 +317,16 @@
                     <div class= "highlight-on-hover">❌</div>
                     <div class="relative-pos">
                       <details class="err hide">
-                        <summary>Cannot construct a Request with a Request object that has already been used.</summary>
-                        <pre>TypeError: Cannot construct a Request with a Request object that has already been used.
-                        at new Request (node:internal/deps/undici/undici:9523:19)
-                        at _sanitizeErrorHeaders (file:///home/runner/work/vc-api-issuer-test-suite/vc-api-issuer-test-suite/node_modules/vc-test-suite-implementations/lib/requests.js:131:21)
-                        at makeHttpsRequest (file:///home/runner/work/vc-api-issuer-test-suite/vc-api-issuer-test-suite/node_modules/vc-test-suite-implementations/lib/requests.js:50:13)
+                        <summary>Request failed with status code 401 Unauthorized</summary>
+                        <pre>HTTPError: Request failed with status code 401 Unauthorized
+                        at fn (file:///home/runner/work/vc-api-issuer-test-suite/vc-api-issuer-test-suite/node_modules/ky/distribution/core/Ky.js:28:29)
+                        at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+                        at async _handleResponse (file:///home/runner/work/vc-api-issuer-test-suite/vc-api-issuer-test-suite/node_modules/@digitalbazaar/http-client/lib/httpClient.js:101:16)
+                        at async makeHttpsRequest (file:///home/runner/work/vc-api-issuer-test-suite/vc-api-issuer-test-suite/node_modules/vc-test-suite-implementations/lib/requests.js:46:14)
+                        at async _requestAccessToken (file:///home/runner/work/vc-api-issuer-test-suite/vc-api-issuer-test-suite/node_modules/vc-test-suite-implementations/lib/oauth2.js:94:41)
+                        at async _getNewAccessToken (file:///home/runner/work/vc-api-issuer-test-suite/vc-api-issuer-test-suite/node_modules/vc-test-suite-implementations/lib/oauth2.js:78:9)
+                        at async constructOAuthHeader (file:///home/runner/work/vc-api-issuer-test-suite/vc-api-issuer-test-suite/node_modules/vc-test-suite-implementations/lib/oauth2.js:24:25)
+                        at async makeHttpsRequest (file:///home/runner/work/vc-api-issuer-test-suite/vc-api-issuer-test-suite/node_modules/vc-test-suite-implementations/lib/requests.js:43:29)
                         at async Context.&lt;anonymous&gt; (file:///home/runner/work/vc-api-issuer-test-suite/vc-api-issuer-test-suite/tests/10-issuer.js:40:49)</pre>
                       </details>
                     </div>
@@ -404,9 +409,22 @@
                     <div class="relative-pos">
                     </div>
                   </td>
-                  <td class="passed not-optional highlight-on-hover text-center">
-                    <div class= "highlight-on-hover">✓</div>
+                  <td class="failed not-optional highlight-on-hover text-center">
+                    <div class= "highlight-on-hover">❌</div>
                     <div class="relative-pos">
+                      <details class="err hide">
+                        <summary>Request failed with status code 401 Unauthorized</summary>
+                        <pre>HTTPError: Request failed with status code 401 Unauthorized
+                        at fn (file:///home/runner/work/vc-api-issuer-test-suite/vc-api-issuer-test-suite/node_modules/ky/distribution/core/Ky.js:28:29)
+                        at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+                        at async _handleResponse (file:///home/runner/work/vc-api-issuer-test-suite/vc-api-issuer-test-suite/node_modules/@digitalbazaar/http-client/lib/httpClient.js:101:16)
+                        at async makeHttpsRequest (file:///home/runner/work/vc-api-issuer-test-suite/vc-api-issuer-test-suite/node_modules/vc-test-suite-implementations/lib/requests.js:46:14)
+                        at async _requestAccessToken (file:///home/runner/work/vc-api-issuer-test-suite/vc-api-issuer-test-suite/node_modules/vc-test-suite-implementations/lib/oauth2.js:94:41)
+                        at async _getNewAccessToken (file:///home/runner/work/vc-api-issuer-test-suite/vc-api-issuer-test-suite/node_modules/vc-test-suite-implementations/lib/oauth2.js:78:9)
+                        at async constructOAuthHeader (file:///home/runner/work/vc-api-issuer-test-suite/vc-api-issuer-test-suite/node_modules/vc-test-suite-implementations/lib/oauth2.js:24:25)
+                        at async makeHttpsRequest (file:///home/runner/work/vc-api-issuer-test-suite/vc-api-issuer-test-suite/node_modules/vc-test-suite-implementations/lib/requests.js:43:29)
+                        at async Context.&lt;anonymous&gt; (file:///home/runner/work/vc-api-issuer-test-suite/vc-api-issuer-test-suite/tests/10-issuer.js:54:33)</pre>
+                      </details>
                     </div>
                   </td>
                   <td class="passed not-optional highlight-on-hover text-center">
@@ -479,9 +497,22 @@
                     <div class="relative-pos">
                     </div>
                   </td>
-                  <td class="passed not-optional highlight-on-hover text-center">
-                    <div class= "highlight-on-hover">✓</div>
+                  <td class="failed not-optional highlight-on-hover text-center">
+                    <div class= "highlight-on-hover">❌</div>
                     <div class="relative-pos">
+                      <details class="err hide">
+                        <summary>Request failed with status code 401 Unauthorized</summary>
+                        <pre>HTTPError: Request failed with status code 401 Unauthorized
+                        at fn (file:///home/runner/work/vc-api-issuer-test-suite/vc-api-issuer-test-suite/node_modules/ky/distribution/core/Ky.js:28:29)
+                        at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+                        at async _handleResponse (file:///home/runner/work/vc-api-issuer-test-suite/vc-api-issuer-test-suite/node_modules/@digitalbazaar/http-client/lib/httpClient.js:101:16)
+                        at async makeHttpsRequest (file:///home/runner/work/vc-api-issuer-test-suite/vc-api-issuer-test-suite/node_modules/vc-test-suite-implementations/lib/requests.js:46:14)
+                        at async _requestAccessToken (file:///home/runner/work/vc-api-issuer-test-suite/vc-api-issuer-test-suite/node_modules/vc-test-suite-implementations/lib/oauth2.js:94:41)
+                        at async _getNewAccessToken (file:///home/runner/work/vc-api-issuer-test-suite/vc-api-issuer-test-suite/node_modules/vc-test-suite-implementations/lib/oauth2.js:78:9)
+                        at async constructOAuthHeader (file:///home/runner/work/vc-api-issuer-test-suite/vc-api-issuer-test-suite/node_modules/vc-test-suite-implementations/lib/oauth2.js:24:25)
+                        at async makeHttpsRequest (file:///home/runner/work/vc-api-issuer-test-suite/vc-api-issuer-test-suite/node_modules/vc-test-suite-implementations/lib/requests.js:43:29)
+                        at async Context.&lt;anonymous&gt; (file:///home/runner/work/vc-api-issuer-test-suite/vc-api-issuer-test-suite/tests/10-issuer.js:64:33)</pre>
+                      </details>
                     </div>
                   </td>
                   <td class="passed not-optional highlight-on-hover text-center">
@@ -554,9 +585,22 @@
                     <div class="relative-pos">
                     </div>
                   </td>
-                  <td class="passed not-optional highlight-on-hover text-center">
-                    <div class= "highlight-on-hover">✓</div>
+                  <td class="failed not-optional highlight-on-hover text-center">
+                    <div class= "highlight-on-hover">❌</div>
                     <div class="relative-pos">
+                      <details class="err hide">
+                        <summary>Request failed with status code 401 Unauthorized</summary>
+                        <pre>HTTPError: Request failed with status code 401 Unauthorized
+                        at fn (file:///home/runner/work/vc-api-issuer-test-suite/vc-api-issuer-test-suite/node_modules/ky/distribution/core/Ky.js:28:29)
+                        at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+                        at async _handleResponse (file:///home/runner/work/vc-api-issuer-test-suite/vc-api-issuer-test-suite/node_modules/@digitalbazaar/http-client/lib/httpClient.js:101:16)
+                        at async makeHttpsRequest (file:///home/runner/work/vc-api-issuer-test-suite/vc-api-issuer-test-suite/node_modules/vc-test-suite-implementations/lib/requests.js:46:14)
+                        at async _requestAccessToken (file:///home/runner/work/vc-api-issuer-test-suite/vc-api-issuer-test-suite/node_modules/vc-test-suite-implementations/lib/oauth2.js:94:41)
+                        at async _getNewAccessToken (file:///home/runner/work/vc-api-issuer-test-suite/vc-api-issuer-test-suite/node_modules/vc-test-suite-implementations/lib/oauth2.js:78:9)
+                        at async constructOAuthHeader (file:///home/runner/work/vc-api-issuer-test-suite/vc-api-issuer-test-suite/node_modules/vc-test-suite-implementations/lib/oauth2.js:24:25)
+                        at async makeHttpsRequest (file:///home/runner/work/vc-api-issuer-test-suite/vc-api-issuer-test-suite/node_modules/vc-test-suite-implementations/lib/requests.js:43:29)
+                        at async Context.&lt;anonymous&gt; (file:///home/runner/work/vc-api-issuer-test-suite/vc-api-issuer-test-suite/tests/10-issuer.js:74:33)</pre>
+                      </details>
                     </div>
                   </td>
                   <td class="passed not-optional highlight-on-hover text-center">
@@ -629,9 +673,22 @@
                     <div class="relative-pos">
                     </div>
                   </td>
-                  <td class="passed not-optional highlight-on-hover text-center">
-                    <div class= "highlight-on-hover">✓</div>
+                  <td class="failed not-optional highlight-on-hover text-center">
+                    <div class= "highlight-on-hover">❌</div>
                     <div class="relative-pos">
+                      <details class="err hide">
+                        <summary>Request failed with status code 401 Unauthorized</summary>
+                        <pre>HTTPError: Request failed with status code 401 Unauthorized
+                        at fn (file:///home/runner/work/vc-api-issuer-test-suite/vc-api-issuer-test-suite/node_modules/ky/distribution/core/Ky.js:28:29)
+                        at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+                        at async _handleResponse (file:///home/runner/work/vc-api-issuer-test-suite/vc-api-issuer-test-suite/node_modules/@digitalbazaar/http-client/lib/httpClient.js:101:16)
+                        at async makeHttpsRequest (file:///home/runner/work/vc-api-issuer-test-suite/vc-api-issuer-test-suite/node_modules/vc-test-suite-implementations/lib/requests.js:46:14)
+                        at async _requestAccessToken (file:///home/runner/work/vc-api-issuer-test-suite/vc-api-issuer-test-suite/node_modules/vc-test-suite-implementations/lib/oauth2.js:94:41)
+                        at async _getNewAccessToken (file:///home/runner/work/vc-api-issuer-test-suite/vc-api-issuer-test-suite/node_modules/vc-test-suite-implementations/lib/oauth2.js:78:9)
+                        at async constructOAuthHeader (file:///home/runner/work/vc-api-issuer-test-suite/vc-api-issuer-test-suite/node_modules/vc-test-suite-implementations/lib/oauth2.js:24:25)
+                        at async makeHttpsRequest (file:///home/runner/work/vc-api-issuer-test-suite/vc-api-issuer-test-suite/node_modules/vc-test-suite-implementations/lib/requests.js:43:29)
+                        at async Context.&lt;anonymous&gt; (file:///home/runner/work/vc-api-issuer-test-suite/vc-api-issuer-test-suite/tests/10-issuer.js:86:35)</pre>
+                      </details>
                     </div>
                   </td>
                   <td class="passed not-optional highlight-on-hover text-center">
@@ -704,9 +761,22 @@
                     <div class="relative-pos">
                     </div>
                   </td>
-                  <td class="passed not-optional highlight-on-hover text-center">
-                    <div class= "highlight-on-hover">✓</div>
+                  <td class="failed not-optional highlight-on-hover text-center">
+                    <div class= "highlight-on-hover">❌</div>
                     <div class="relative-pos">
+                      <details class="err hide">
+                        <summary>Request failed with status code 401 Unauthorized</summary>
+                        <pre>HTTPError: Request failed with status code 401 Unauthorized
+                        at fn (file:///home/runner/work/vc-api-issuer-test-suite/vc-api-issuer-test-suite/node_modules/ky/distribution/core/Ky.js:28:29)
+                        at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+                        at async _handleResponse (file:///home/runner/work/vc-api-issuer-test-suite/vc-api-issuer-test-suite/node_modules/@digitalbazaar/http-client/lib/httpClient.js:101:16)
+                        at async makeHttpsRequest (file:///home/runner/work/vc-api-issuer-test-suite/vc-api-issuer-test-suite/node_modules/vc-test-suite-implementations/lib/requests.js:46:14)
+                        at async _requestAccessToken (file:///home/runner/work/vc-api-issuer-test-suite/vc-api-issuer-test-suite/node_modules/vc-test-suite-implementations/lib/oauth2.js:94:41)
+                        at async _getNewAccessToken (file:///home/runner/work/vc-api-issuer-test-suite/vc-api-issuer-test-suite/node_modules/vc-test-suite-implementations/lib/oauth2.js:78:9)
+                        at async constructOAuthHeader (file:///home/runner/work/vc-api-issuer-test-suite/vc-api-issuer-test-suite/node_modules/vc-test-suite-implementations/lib/oauth2.js:24:25)
+                        at async makeHttpsRequest (file:///home/runner/work/vc-api-issuer-test-suite/vc-api-issuer-test-suite/node_modules/vc-test-suite-implementations/lib/requests.js:43:29)
+                        at async Context.&lt;anonymous&gt; (file:///home/runner/work/vc-api-issuer-test-suite/vc-api-issuer-test-suite/tests/10-issuer.js:97:33)</pre>
+                      </details>
                     </div>
                   </td>
                   <td class="passed not-optional highlight-on-hover text-center">
@@ -779,9 +849,22 @@
                     <div class="relative-pos">
                     </div>
                   </td>
-                  <td class="passed not-optional highlight-on-hover text-center">
-                    <div class= "highlight-on-hover">✓</div>
+                  <td class="failed not-optional highlight-on-hover text-center">
+                    <div class= "highlight-on-hover">❌</div>
                     <div class="relative-pos">
+                      <details class="err hide">
+                        <summary>Request failed with status code 401 Unauthorized</summary>
+                        <pre>HTTPError: Request failed with status code 401 Unauthorized
+                        at fn (file:///home/runner/work/vc-api-issuer-test-suite/vc-api-issuer-test-suite/node_modules/ky/distribution/core/Ky.js:28:29)
+                        at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+                        at async _handleResponse (file:///home/runner/work/vc-api-issuer-test-suite/vc-api-issuer-test-suite/node_modules/@digitalbazaar/http-client/lib/httpClient.js:101:16)
+                        at async makeHttpsRequest (file:///home/runner/work/vc-api-issuer-test-suite/vc-api-issuer-test-suite/node_modules/vc-test-suite-implementations/lib/requests.js:46:14)
+                        at async _requestAccessToken (file:///home/runner/work/vc-api-issuer-test-suite/vc-api-issuer-test-suite/node_modules/vc-test-suite-implementations/lib/oauth2.js:94:41)
+                        at async _getNewAccessToken (file:///home/runner/work/vc-api-issuer-test-suite/vc-api-issuer-test-suite/node_modules/vc-test-suite-implementations/lib/oauth2.js:78:9)
+                        at async constructOAuthHeader (file:///home/runner/work/vc-api-issuer-test-suite/vc-api-issuer-test-suite/node_modules/vc-test-suite-implementations/lib/oauth2.js:24:25)
+                        at async makeHttpsRequest (file:///home/runner/work/vc-api-issuer-test-suite/vc-api-issuer-test-suite/node_modules/vc-test-suite-implementations/lib/requests.js:43:29)
+                        at async Context.&lt;anonymous&gt; (file:///home/runner/work/vc-api-issuer-test-suite/vc-api-issuer-test-suite/tests/10-issuer.js:107:33)</pre>
+                      </details>
                     </div>
                   </td>
                   <td class="passed not-optional highlight-on-hover text-center">
@@ -868,9 +951,22 @@
                     <div class="relative-pos">
                     </div>
                   </td>
-                  <td class="passed not-optional highlight-on-hover text-center">
-                    <div class= "highlight-on-hover">✓</div>
+                  <td class="failed not-optional highlight-on-hover text-center">
+                    <div class= "highlight-on-hover">❌</div>
                     <div class="relative-pos">
+                      <details class="err hide">
+                        <summary>Request failed with status code 401 Unauthorized</summary>
+                        <pre>HTTPError: Request failed with status code 401 Unauthorized
+                        at fn (file:///home/runner/work/vc-api-issuer-test-suite/vc-api-issuer-test-suite/node_modules/ky/distribution/core/Ky.js:28:29)
+                        at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+                        at async _handleResponse (file:///home/runner/work/vc-api-issuer-test-suite/vc-api-issuer-test-suite/node_modules/@digitalbazaar/http-client/lib/httpClient.js:101:16)
+                        at async makeHttpsRequest (file:///home/runner/work/vc-api-issuer-test-suite/vc-api-issuer-test-suite/node_modules/vc-test-suite-implementations/lib/requests.js:46:14)
+                        at async _requestAccessToken (file:///home/runner/work/vc-api-issuer-test-suite/vc-api-issuer-test-suite/node_modules/vc-test-suite-implementations/lib/oauth2.js:94:41)
+                        at async _getNewAccessToken (file:///home/runner/work/vc-api-issuer-test-suite/vc-api-issuer-test-suite/node_modules/vc-test-suite-implementations/lib/oauth2.js:78:9)
+                        at async constructOAuthHeader (file:///home/runner/work/vc-api-issuer-test-suite/vc-api-issuer-test-suite/node_modules/vc-test-suite-implementations/lib/oauth2.js:24:25)
+                        at async makeHttpsRequest (file:///home/runner/work/vc-api-issuer-test-suite/vc-api-issuer-test-suite/node_modules/vc-test-suite-implementations/lib/requests.js:43:29)
+                        at async Context.&lt;anonymous&gt; (file:///home/runner/work/vc-api-issuer-test-suite/vc-api-issuer-test-suite/tests/10-issuer.js:119:35)</pre>
+                      </details>
                     </div>
                   </td>
                   <td class="passed not-optional highlight-on-hover text-center">
@@ -957,9 +1053,22 @@
                     <div class="relative-pos">
                     </div>
                   </td>
-                  <td class="passed not-optional highlight-on-hover text-center">
-                    <div class= "highlight-on-hover">✓</div>
+                  <td class="failed not-optional highlight-on-hover text-center">
+                    <div class= "highlight-on-hover">❌</div>
                     <div class="relative-pos">
+                      <details class="err hide">
+                        <summary>Request failed with status code 401 Unauthorized</summary>
+                        <pre>HTTPError: Request failed with status code 401 Unauthorized
+                        at fn (file:///home/runner/work/vc-api-issuer-test-suite/vc-api-issuer-test-suite/node_modules/ky/distribution/core/Ky.js:28:29)
+                        at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+                        at async _handleResponse (file:///home/runner/work/vc-api-issuer-test-suite/vc-api-issuer-test-suite/node_modules/@digitalbazaar/http-client/lib/httpClient.js:101:16)
+                        at async makeHttpsRequest (file:///home/runner/work/vc-api-issuer-test-suite/vc-api-issuer-test-suite/node_modules/vc-test-suite-implementations/lib/requests.js:46:14)
+                        at async _requestAccessToken (file:///home/runner/work/vc-api-issuer-test-suite/vc-api-issuer-test-suite/node_modules/vc-test-suite-implementations/lib/oauth2.js:94:41)
+                        at async _getNewAccessToken (file:///home/runner/work/vc-api-issuer-test-suite/vc-api-issuer-test-suite/node_modules/vc-test-suite-implementations/lib/oauth2.js:78:9)
+                        at async constructOAuthHeader (file:///home/runner/work/vc-api-issuer-test-suite/vc-api-issuer-test-suite/node_modules/vc-test-suite-implementations/lib/oauth2.js:24:25)
+                        at async makeHttpsRequest (file:///home/runner/work/vc-api-issuer-test-suite/vc-api-issuer-test-suite/node_modules/vc-test-suite-implementations/lib/requests.js:43:29)
+                        at async Context.&lt;anonymous&gt; (file:///home/runner/work/vc-api-issuer-test-suite/vc-api-issuer-test-suite/tests/10-issuer.js:130:33)</pre>
+                      </details>
                     </div>
                   </td>
                   <td class="passed not-optional highlight-on-hover text-center">
@@ -1053,9 +1162,22 @@
                     <div class="relative-pos">
                     </div>
                   </td>
-                  <td class="passed not-optional highlight-on-hover text-center">
-                    <div class= "highlight-on-hover">✓</div>
+                  <td class="failed not-optional highlight-on-hover text-center">
+                    <div class= "highlight-on-hover">❌</div>
                     <div class="relative-pos">
+                      <details class="err hide">
+                        <summary>Request failed with status code 401 Unauthorized</summary>
+                        <pre>HTTPError: Request failed with status code 401 Unauthorized
+                        at fn (file:///home/runner/work/vc-api-issuer-test-suite/vc-api-issuer-test-suite/node_modules/ky/distribution/core/Ky.js:28:29)
+                        at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+                        at async _handleResponse (file:///home/runner/work/vc-api-issuer-test-suite/vc-api-issuer-test-suite/node_modules/@digitalbazaar/http-client/lib/httpClient.js:101:16)
+                        at async makeHttpsRequest (file:///home/runner/work/vc-api-issuer-test-suite/vc-api-issuer-test-suite/node_modules/vc-test-suite-implementations/lib/requests.js:46:14)
+                        at async _requestAccessToken (file:///home/runner/work/vc-api-issuer-test-suite/vc-api-issuer-test-suite/node_modules/vc-test-suite-implementations/lib/oauth2.js:94:41)
+                        at async _getNewAccessToken (file:///home/runner/work/vc-api-issuer-test-suite/vc-api-issuer-test-suite/node_modules/vc-test-suite-implementations/lib/oauth2.js:78:9)
+                        at async constructOAuthHeader (file:///home/runner/work/vc-api-issuer-test-suite/vc-api-issuer-test-suite/node_modules/vc-test-suite-implementations/lib/oauth2.js:24:25)
+                        at async makeHttpsRequest (file:///home/runner/work/vc-api-issuer-test-suite/vc-api-issuer-test-suite/node_modules/vc-test-suite-implementations/lib/requests.js:43:29)
+                        at async Context.&lt;anonymous&gt; (file:///home/runner/work/vc-api-issuer-test-suite/vc-api-issuer-test-suite/tests/10-issuer.js:142:35)</pre>
+                      </details>
                     </div>
                   </td>
                   <td class="passed not-optional highlight-on-hover text-center">
@@ -1142,9 +1264,22 @@
                     <div class="relative-pos">
                     </div>
                   </td>
-                  <td class="passed not-optional highlight-on-hover text-center">
-                    <div class= "highlight-on-hover">✓</div>
+                  <td class="failed not-optional highlight-on-hover text-center">
+                    <div class= "highlight-on-hover">❌</div>
                     <div class="relative-pos">
+                      <details class="err hide">
+                        <summary>Request failed with status code 401 Unauthorized</summary>
+                        <pre>HTTPError: Request failed with status code 401 Unauthorized
+                        at fn (file:///home/runner/work/vc-api-issuer-test-suite/vc-api-issuer-test-suite/node_modules/ky/distribution/core/Ky.js:28:29)
+                        at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+                        at async _handleResponse (file:///home/runner/work/vc-api-issuer-test-suite/vc-api-issuer-test-suite/node_modules/@digitalbazaar/http-client/lib/httpClient.js:101:16)
+                        at async makeHttpsRequest (file:///home/runner/work/vc-api-issuer-test-suite/vc-api-issuer-test-suite/node_modules/vc-test-suite-implementations/lib/requests.js:46:14)
+                        at async _requestAccessToken (file:///home/runner/work/vc-api-issuer-test-suite/vc-api-issuer-test-suite/node_modules/vc-test-suite-implementations/lib/oauth2.js:94:41)
+                        at async _getNewAccessToken (file:///home/runner/work/vc-api-issuer-test-suite/vc-api-issuer-test-suite/node_modules/vc-test-suite-implementations/lib/oauth2.js:78:9)
+                        at async constructOAuthHeader (file:///home/runner/work/vc-api-issuer-test-suite/vc-api-issuer-test-suite/node_modules/vc-test-suite-implementations/lib/oauth2.js:24:25)
+                        at async makeHttpsRequest (file:///home/runner/work/vc-api-issuer-test-suite/vc-api-issuer-test-suite/node_modules/vc-test-suite-implementations/lib/requests.js:43:29)
+                        at async Context.&lt;anonymous&gt; (file:///home/runner/work/vc-api-issuer-test-suite/vc-api-issuer-test-suite/tests/10-issuer.js:153:33)</pre>
+                      </details>
                     </div>
                   </td>
                   <td class="passed not-optional highlight-on-hover text-center">
@@ -1203,8 +1338,8 @@
                     <div class= "highlight-on-hover">❌</div>
                     <div class="relative-pos">
                       <details class="err hide">
-                        <summary>Expected no result from issuer.: expected Response { status: 201, statusText: &#x27;Created&#x27;, headers: Headers { &#x27;content-type&#x27;: &#x27;application/ld+json&#x27;, &#x27;x-cloud-trace-context&#x27;: &#x27;d05ed10a3d01df3d1fecc3bffb72e81c&#x27;, date: &#x27;Sun, 17 Nov 2024 05:09:22 GMT&#x27;, server: &#x27;Google Frontend&#x27;, &#x27;content-length&#x27;: &#x27;681&#x27;, Authorization: &#x27;** SANITIZED TO PREVENT EXPOSING OF SECRETS ***&#x27; }, body: ReadableStream { locked: false, state: &#x27;readable&#x27;, supportsBYOB: true }, bodyUsed: false, ok: true, redirected: false, type: &#x27;default&#x27;, url: &#x27;&#x27; } to not exist</summary>
-                        <pre>AssertionError: Expected no result from issuer.: expected Response { status: 201, statusText: &#x27;Created&#x27;, headers: Headers { &#x27;content-type&#x27;: &#x27;application/ld+json&#x27;, &#x27;x-cloud-trace-context&#x27;: &#x27;d05ed10a3d01df3d1fecc3bffb72e81c&#x27;, date: &#x27;Sun, 17 Nov 2024 05:09:22 GMT&#x27;, server: &#x27;Google Frontend&#x27;, &#x27;content-length&#x27;: &#x27;681&#x27;, Authorization: &#x27;** SANITIZED TO PREVENT EXPOSING OF SECRETS ***&#x27; }, body: ReadableStream { locked: false, state: &#x27;readable&#x27;, supportsBYOB: true }, bodyUsed: false, ok: true, redirected: false, type: &#x27;default&#x27;, url: &#x27;&#x27; } to not exist
+                        <summary>Expected no result from issuer.: expected Response { status: 201, statusText: &#x27;Created&#x27;, headers: Headers { &#x27;content-type&#x27;: &#x27;application/ld+json&#x27;, &#x27;x-cloud-trace-context&#x27;: &#x27;634dd125de0b36b1a299ef3d89ddf5c1&#x27;, date: &#x27;Sun, 24 Nov 2024 05:10:33 GMT&#x27;, server: &#x27;Google Frontend&#x27;, &#x27;content-length&#x27;: &#x27;681&#x27;, Authorization: &#x27;** SANITIZED TO PREVENT EXPOSING OF SECRETS ***&#x27; }, body: ReadableStream { locked: false, state: &#x27;readable&#x27;, supportsBYOB: true }, bodyUsed: false, ok: true, redirected: false, type: &#x27;default&#x27;, url: &#x27;&#x27; } to not exist</summary>
+                        <pre>AssertionError: Expected no result from issuer.: expected Response { status: 201, statusText: &#x27;Created&#x27;, headers: Headers { &#x27;content-type&#x27;: &#x27;application/ld+json&#x27;, &#x27;x-cloud-trace-context&#x27;: &#x27;634dd125de0b36b1a299ef3d89ddf5c1&#x27;, date: &#x27;Sun, 24 Nov 2024 05:10:33 GMT&#x27;, server: &#x27;Google Frontend&#x27;, &#x27;content-length&#x27;: &#x27;681&#x27;, Authorization: &#x27;** SANITIZED TO PREVENT EXPOSING OF SECRETS ***&#x27; }, body: ReadableStream { locked: false, state: &#x27;readable&#x27;, supportsBYOB: true }, bodyUsed: false, ok: true, redirected: false, type: &#x27;default&#x27;, url: &#x27;&#x27; } to not exist
                         at should.not.exist (node_modules/chai/lib/chai/interface/should.js:208:38)
                         at shouldThrowInvalidInput (file:///home/runner/work/vc-api-issuer-test-suite/vc-api-issuer-test-suite/tests/assertions.js:9:14)
                         at Context.&lt;anonymous&gt; (file:///home/runner/work/vc-api-issuer-test-suite/vc-api-issuer-test-suite/tests/10-issuer.js:168:11)
@@ -1239,9 +1374,22 @@
                     <div class="relative-pos">
                     </div>
                   </td>
-                  <td class="passed not-optional highlight-on-hover text-center">
-                    <div class= "highlight-on-hover">✓</div>
+                  <td class="failed not-optional highlight-on-hover text-center">
+                    <div class= "highlight-on-hover">❌</div>
                     <div class="relative-pos">
+                      <details class="err hide">
+                        <summary>Request failed with status code 401 Unauthorized</summary>
+                        <pre>HTTPError: Request failed with status code 401 Unauthorized
+                        at fn (file:///home/runner/work/vc-api-issuer-test-suite/vc-api-issuer-test-suite/node_modules/ky/distribution/core/Ky.js:28:29)
+                        at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+                        at async _handleResponse (file:///home/runner/work/vc-api-issuer-test-suite/vc-api-issuer-test-suite/node_modules/@digitalbazaar/http-client/lib/httpClient.js:101:16)
+                        at async makeHttpsRequest (file:///home/runner/work/vc-api-issuer-test-suite/vc-api-issuer-test-suite/node_modules/vc-test-suite-implementations/lib/requests.js:46:14)
+                        at async _requestAccessToken (file:///home/runner/work/vc-api-issuer-test-suite/vc-api-issuer-test-suite/node_modules/vc-test-suite-implementations/lib/oauth2.js:94:41)
+                        at async _getNewAccessToken (file:///home/runner/work/vc-api-issuer-test-suite/vc-api-issuer-test-suite/node_modules/vc-test-suite-implementations/lib/oauth2.js:78:9)
+                        at async constructOAuthHeader (file:///home/runner/work/vc-api-issuer-test-suite/vc-api-issuer-test-suite/node_modules/vc-test-suite-implementations/lib/oauth2.js:24:25)
+                        at async makeHttpsRequest (file:///home/runner/work/vc-api-issuer-test-suite/vc-api-issuer-test-suite/node_modules/vc-test-suite-implementations/lib/requests.js:43:29)
+                        at async Context.&lt;anonymous&gt; (file:///home/runner/work/vc-api-issuer-test-suite/vc-api-issuer-test-suite/tests/10-issuer.js:167:35)</pre>
+                      </details>
                     </div>
                   </td>
                   <td class="passed not-optional highlight-on-hover text-center">
@@ -1330,9 +1478,22 @@
                     <div class="relative-pos">
                     </div>
                   </td>
-                  <td class="passed not-optional highlight-on-hover text-center">
-                    <div class= "highlight-on-hover">✓</div>
+                  <td class="failed not-optional highlight-on-hover text-center">
+                    <div class= "highlight-on-hover">❌</div>
                     <div class="relative-pos">
+                      <details class="err hide">
+                        <summary>Request failed with status code 401 Unauthorized</summary>
+                        <pre>HTTPError: Request failed with status code 401 Unauthorized
+                        at fn (file:///home/runner/work/vc-api-issuer-test-suite/vc-api-issuer-test-suite/node_modules/ky/distribution/core/Ky.js:28:29)
+                        at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+                        at async _handleResponse (file:///home/runner/work/vc-api-issuer-test-suite/vc-api-issuer-test-suite/node_modules/@digitalbazaar/http-client/lib/httpClient.js:101:16)
+                        at async makeHttpsRequest (file:///home/runner/work/vc-api-issuer-test-suite/vc-api-issuer-test-suite/node_modules/vc-test-suite-implementations/lib/requests.js:46:14)
+                        at async _requestAccessToken (file:///home/runner/work/vc-api-issuer-test-suite/vc-api-issuer-test-suite/node_modules/vc-test-suite-implementations/lib/oauth2.js:94:41)
+                        at async _getNewAccessToken (file:///home/runner/work/vc-api-issuer-test-suite/vc-api-issuer-test-suite/node_modules/vc-test-suite-implementations/lib/oauth2.js:78:9)
+                        at async constructOAuthHeader (file:///home/runner/work/vc-api-issuer-test-suite/vc-api-issuer-test-suite/node_modules/vc-test-suite-implementations/lib/oauth2.js:24:25)
+                        at async makeHttpsRequest (file:///home/runner/work/vc-api-issuer-test-suite/vc-api-issuer-test-suite/node_modules/vc-test-suite-implementations/lib/requests.js:43:29)
+                        at async Context.&lt;anonymous&gt; (file:///home/runner/work/vc-api-issuer-test-suite/vc-api-issuer-test-suite/tests/10-issuer.js:192:33)</pre>
+                      </details>
                     </div>
                   </td>
                   <td class="passed not-optional highlight-on-hover text-center">
