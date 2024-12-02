@@ -169,13 +169,13 @@
     <section class="informative" id="conformance-testing-results">
       <h2> Conformance Testing Results </h2>
       <p>
-      Tests passed 126/170 74%
+      Tests passed 125/170 73%
       </p>
       <p>
-      Tests failed 44/170 26%
+      Tests failed 45/170 27%
       </p>
       <p>
-      Failures 44
+      Failures 45
       </p>
       <p>
       Tests skipped 12
@@ -184,7 +184,7 @@
       Total tests 182
       </p>
       <p>
-        These tests were run on <time>1 December 2024 at 5:10 am UTC</time>
+        These tests were run on <time>2 December 2024 at 7:05 pm UTC</time>
       </p>
       <section class="informative" id="Key">
         <h3>Key</h3>
@@ -271,12 +271,12 @@
                     <div class= "highlight-on-hover">❌</div>
                     <div class="relative-pos">
                       <details class="err hide">
-                        <summary>Expected no error, got Request failed with status code 500 Internal Server Error: expected HTTPError: Request failed with status cod… { …(5) } to not exist</summary>
-                        <pre>AssertionError: Expected no error, got Request failed with status code 500 Internal Server Error: expected HTTPError: Request failed with status cod… { …(5) } to not exist
-                        at should.not.exist (node_modules/chai/lib/chai/interface/should.js:208:38)
-                        at shouldReturnResult (file:///home/runner/work/vc-api-issuer-test-suite/vc-api-issuer-test-suite/tests/assertions.js:19:14)
-                        at Context.&lt;anonymous&gt; (file:///home/runner/work/vc-api-issuer-test-suite/vc-api-issuer-test-suite/tests/10-issuer.js:41:9)
-                        at process.processTicksAndRejections (node:internal/process/task_queues:95:5)</pre>
+                        <summary>Cannot construct a Request with a Request object that has already been used.</summary>
+                        <pre>TypeError: Cannot construct a Request with a Request object that has already been used.
+                        at new Request (node:internal/deps/undici/undici:9721:19)
+                        at _sanitizeErrorHeaders (file:///home/runner/work/vc-api-issuer-test-suite/vc-api-issuer-test-suite/node_modules/vc-test-suite-implementations/lib/requests.js:131:21)
+                        at makeHttpsRequest (file:///home/runner/work/vc-api-issuer-test-suite/vc-api-issuer-test-suite/node_modules/vc-test-suite-implementations/lib/requests.js:50:13)
+                        at async Context.&lt;anonymous&gt; (file:///home/runner/work/vc-api-issuer-test-suite/vc-api-issuer-test-suite/tests/10-issuer.js:40:49)</pre>
                       </details>
                     </div>
                   </td>
@@ -290,17 +290,9 @@
                     <div class="relative-pos">
                     </div>
                   </td>
-                  <td class="failed not-optional highlight-on-hover text-center">
-                    <div class= "highlight-on-hover">❌</div>
+                  <td class="passed not-optional highlight-on-hover text-center">
+                    <div class= "highlight-on-hover">✓</div>
                     <div class="relative-pos">
-                      <details class="err hide">
-                        <summary>Expected no error, got Authorization error.: expected HTTPError: Authorization error. { …(6) } to not exist</summary>
-                        <pre>AssertionError: Expected no error, got Authorization error.: expected HTTPError: Authorization error. { …(6) } to not exist
-                        at should.not.exist (node_modules/chai/lib/chai/interface/should.js:208:38)
-                        at shouldReturnResult (file:///home/runner/work/vc-api-issuer-test-suite/vc-api-issuer-test-suite/tests/assertions.js:19:14)
-                        at Context.&lt;anonymous&gt; (file:///home/runner/work/vc-api-issuer-test-suite/vc-api-issuer-test-suite/tests/10-issuer.js:41:9)
-                        at process.processTicksAndRejections (node:internal/process/task_queues:95:5)</pre>
-                      </details>
                     </div>
                   </td>
                   <td class="passed not-optional highlight-on-hover text-center">
@@ -379,9 +371,20 @@
                     Request body MUST have property &quot;credential&quot;.
                 </td>
                 <!--These contain if the test passed, failed, or was skipped-->
-                  <td class="passed not-optional highlight-on-hover text-center">
-                    <div class= "highlight-on-hover">✓</div>
+                  <td class="failed not-optional highlight-on-hover text-center">
+                    <div class= "highlight-on-hover">❌</div>
                     <div class="relative-pos">
+                      <details class="err hide">
+                        <summary>Cannot construct a Request with a Request object that has already been used.</summary>
+                        <pre>TypeError: Cannot construct a Request with a Request object that has already been used.
+                        at new Request (node:internal/deps/undici/undici:9721:19)
+                        at _sanitizeErrorHeaders (file:///home/runner/work/vc-api-issuer-test-suite/vc-api-issuer-test-suite/node_modules/vc-test-suite-implementations/lib/requests.js:131:21)
+                        at makeHttpsRequest (file:///home/runner/work/vc-api-issuer-test-suite/vc-api-issuer-test-suite/node_modules/vc-test-suite-implementations/lib/requests.js:50:13)
+                        at runNextTicks (node:internal/process/task_queues:60:5)
+                        at listOnTimeout (node:internal/timers:545:9)
+                        at process.processTimers (node:internal/timers:519:7)
+                        at async Context.&lt;anonymous&gt; (file:///home/runner/work/vc-api-issuer-test-suite/vc-api-issuer-test-suite/tests/10-issuer.js:54:33)</pre>
+                      </details>
                     </div>
                   </td>
                   <td class="passed not-optional highlight-on-hover text-center">
@@ -467,9 +470,20 @@
                     credential MUST have property &quot;@context&quot;.
                 </td>
                 <!--These contain if the test passed, failed, or was skipped-->
-                  <td class="passed not-optional highlight-on-hover text-center">
-                    <div class= "highlight-on-hover">✓</div>
+                  <td class="failed not-optional highlight-on-hover text-center">
+                    <div class= "highlight-on-hover">❌</div>
                     <div class="relative-pos">
+                      <details class="err hide">
+                        <summary>Cannot construct a Request with a Request object that has already been used.</summary>
+                        <pre>TypeError: Cannot construct a Request with a Request object that has already been used.
+                        at new Request (node:internal/deps/undici/undici:9721:19)
+                        at _sanitizeErrorHeaders (file:///home/runner/work/vc-api-issuer-test-suite/vc-api-issuer-test-suite/node_modules/vc-test-suite-implementations/lib/requests.js:131:21)
+                        at makeHttpsRequest (file:///home/runner/work/vc-api-issuer-test-suite/vc-api-issuer-test-suite/node_modules/vc-test-suite-implementations/lib/requests.js:50:13)
+                        at runNextTicks (node:internal/process/task_queues:60:5)
+                        at listOnTimeout (node:internal/timers:545:9)
+                        at process.processTimers (node:internal/timers:519:7)
+                        at async Context.&lt;anonymous&gt; (file:///home/runner/work/vc-api-issuer-test-suite/vc-api-issuer-test-suite/tests/10-issuer.js:64:33)</pre>
+                      </details>
                     </div>
                   </td>
                   <td class="passed not-optional highlight-on-hover text-center">
@@ -555,9 +569,20 @@
                     credential &quot;@context&quot; MUST be an array.
                 </td>
                 <!--These contain if the test passed, failed, or was skipped-->
-                  <td class="passed not-optional highlight-on-hover text-center">
-                    <div class= "highlight-on-hover">✓</div>
+                  <td class="failed not-optional highlight-on-hover text-center">
+                    <div class= "highlight-on-hover">❌</div>
                     <div class="relative-pos">
+                      <details class="err hide">
+                        <summary>Cannot construct a Request with a Request object that has already been used.</summary>
+                        <pre>TypeError: Cannot construct a Request with a Request object that has already been used.
+                        at new Request (node:internal/deps/undici/undici:9721:19)
+                        at _sanitizeErrorHeaders (file:///home/runner/work/vc-api-issuer-test-suite/vc-api-issuer-test-suite/node_modules/vc-test-suite-implementations/lib/requests.js:131:21)
+                        at makeHttpsRequest (file:///home/runner/work/vc-api-issuer-test-suite/vc-api-issuer-test-suite/node_modules/vc-test-suite-implementations/lib/requests.js:50:13)
+                        at runNextTicks (node:internal/process/task_queues:60:5)
+                        at listOnTimeout (node:internal/timers:545:9)
+                        at process.processTimers (node:internal/timers:519:7)
+                        at async Context.&lt;anonymous&gt; (file:///home/runner/work/vc-api-issuer-test-suite/vc-api-issuer-test-suite/tests/10-issuer.js:74:33)</pre>
+                      </details>
                     </div>
                   </td>
                   <td class="passed not-optional highlight-on-hover text-center">
@@ -643,9 +668,20 @@
                     credential &quot;@context&quot; items MUST be strings.
                 </td>
                 <!--These contain if the test passed, failed, or was skipped-->
-                  <td class="passed not-optional highlight-on-hover text-center">
-                    <div class= "highlight-on-hover">✓</div>
+                  <td class="failed not-optional highlight-on-hover text-center">
+                    <div class= "highlight-on-hover">❌</div>
                     <div class="relative-pos">
+                      <details class="err hide">
+                        <summary>Cannot construct a Request with a Request object that has already been used.</summary>
+                        <pre>TypeError: Cannot construct a Request with a Request object that has already been used.
+                        at new Request (node:internal/deps/undici/undici:9721:19)
+                        at _sanitizeErrorHeaders (file:///home/runner/work/vc-api-issuer-test-suite/vc-api-issuer-test-suite/node_modules/vc-test-suite-implementations/lib/requests.js:131:21)
+                        at makeHttpsRequest (file:///home/runner/work/vc-api-issuer-test-suite/vc-api-issuer-test-suite/node_modules/vc-test-suite-implementations/lib/requests.js:50:13)
+                        at runNextTicks (node:internal/process/task_queues:60:5)
+                        at listOnTimeout (node:internal/timers:545:9)
+                        at process.processTimers (node:internal/timers:519:7)
+                        at async Context.&lt;anonymous&gt; (file:///home/runner/work/vc-api-issuer-test-suite/vc-api-issuer-test-suite/tests/10-issuer.js:86:35)</pre>
+                      </details>
                     </div>
                   </td>
                   <td class="passed not-optional highlight-on-hover text-center">
@@ -731,9 +767,20 @@
                     credential MUST have property &quot;type&quot;
                 </td>
                 <!--These contain if the test passed, failed, or was skipped-->
-                  <td class="passed not-optional highlight-on-hover text-center">
-                    <div class= "highlight-on-hover">✓</div>
+                  <td class="failed not-optional highlight-on-hover text-center">
+                    <div class= "highlight-on-hover">❌</div>
                     <div class="relative-pos">
+                      <details class="err hide">
+                        <summary>Cannot construct a Request with a Request object that has already been used.</summary>
+                        <pre>TypeError: Cannot construct a Request with a Request object that has already been used.
+                        at new Request (node:internal/deps/undici/undici:9721:19)
+                        at _sanitizeErrorHeaders (file:///home/runner/work/vc-api-issuer-test-suite/vc-api-issuer-test-suite/node_modules/vc-test-suite-implementations/lib/requests.js:131:21)
+                        at makeHttpsRequest (file:///home/runner/work/vc-api-issuer-test-suite/vc-api-issuer-test-suite/node_modules/vc-test-suite-implementations/lib/requests.js:50:13)
+                        at runNextTicks (node:internal/process/task_queues:60:5)
+                        at listOnTimeout (node:internal/timers:545:9)
+                        at process.processTimers (node:internal/timers:519:7)
+                        at async Context.&lt;anonymous&gt; (file:///home/runner/work/vc-api-issuer-test-suite/vc-api-issuer-test-suite/tests/10-issuer.js:97:33)</pre>
+                      </details>
                     </div>
                   </td>
                   <td class="passed not-optional highlight-on-hover text-center">
@@ -819,9 +866,20 @@
                     &quot;credential.type&quot; MUST be an array.
                 </td>
                 <!--These contain if the test passed, failed, or was skipped-->
-                  <td class="passed not-optional highlight-on-hover text-center">
-                    <div class= "highlight-on-hover">✓</div>
+                  <td class="failed not-optional highlight-on-hover text-center">
+                    <div class= "highlight-on-hover">❌</div>
                     <div class="relative-pos">
+                      <details class="err hide">
+                        <summary>Cannot construct a Request with a Request object that has already been used.</summary>
+                        <pre>TypeError: Cannot construct a Request with a Request object that has already been used.
+                        at new Request (node:internal/deps/undici/undici:9721:19)
+                        at _sanitizeErrorHeaders (file:///home/runner/work/vc-api-issuer-test-suite/vc-api-issuer-test-suite/node_modules/vc-test-suite-implementations/lib/requests.js:131:21)
+                        at makeHttpsRequest (file:///home/runner/work/vc-api-issuer-test-suite/vc-api-issuer-test-suite/node_modules/vc-test-suite-implementations/lib/requests.js:50:13)
+                        at runNextTicks (node:internal/process/task_queues:60:5)
+                        at listOnTimeout (node:internal/timers:545:9)
+                        at process.processTimers (node:internal/timers:519:7)
+                        at async Context.&lt;anonymous&gt; (file:///home/runner/work/vc-api-issuer-test-suite/vc-api-issuer-test-suite/tests/10-issuer.js:107:33)</pre>
+                      </details>
                     </div>
                   </td>
                   <td class="passed not-optional highlight-on-hover text-center">
@@ -911,11 +969,15 @@
                     <div class= "highlight-on-hover">❌</div>
                     <div class="relative-pos">
                       <details class="err hide">
-                        <summary>Expected status code 400 or 422.: expected 500 to be one of [ 400, 422 ]</summary>
-                        <pre>AssertionError: Expected status code 400 or 422.: expected 500 to be one of [ 400, 422 ]
-                        at shouldThrowInvalidInput (file:///home/runner/work/vc-api-issuer-test-suite/vc-api-issuer-test-suite/tests/assertions.js:14:26)
-                        at Context.&lt;anonymous&gt; (file:///home/runner/work/vc-api-issuer-test-suite/vc-api-issuer-test-suite/tests/10-issuer.js:120:11)
-                        at process.processTicksAndRejections (node:internal/process/task_queues:95:5)</pre>
+                        <summary>Cannot construct a Request with a Request object that has already been used.</summary>
+                        <pre>TypeError: Cannot construct a Request with a Request object that has already been used.
+                        at new Request (node:internal/deps/undici/undici:9721:19)
+                        at _sanitizeErrorHeaders (file:///home/runner/work/vc-api-issuer-test-suite/vc-api-issuer-test-suite/node_modules/vc-test-suite-implementations/lib/requests.js:131:21)
+                        at makeHttpsRequest (file:///home/runner/work/vc-api-issuer-test-suite/vc-api-issuer-test-suite/node_modules/vc-test-suite-implementations/lib/requests.js:50:13)
+                        at runNextTicks (node:internal/process/task_queues:60:5)
+                        at listOnTimeout (node:internal/timers:545:9)
+                        at process.processTimers (node:internal/timers:519:7)
+                        at async Context.&lt;anonymous&gt; (file:///home/runner/work/vc-api-issuer-test-suite/vc-api-issuer-test-suite/tests/10-issuer.js:119:35)</pre>
                       </details>
                     </div>
                   </td>
@@ -929,16 +991,9 @@
                     <div class="relative-pos">
                     </div>
                   </td>
-                  <td class="failed not-optional highlight-on-hover text-center">
-                    <div class= "highlight-on-hover">❌</div>
+                  <td class="passed not-optional highlight-on-hover text-center">
+                    <div class= "highlight-on-hover">✓</div>
                     <div class="relative-pos">
-                      <details class="err hide">
-                        <summary>Expected status code 400 or 422.: expected 403 to be one of [ 400, 422 ]</summary>
-                        <pre>AssertionError: Expected status code 400 or 422.: expected 403 to be one of [ 400, 422 ]
-                        at shouldThrowInvalidInput (file:///home/runner/work/vc-api-issuer-test-suite/vc-api-issuer-test-suite/tests/assertions.js:14:26)
-                        at Context.&lt;anonymous&gt; (file:///home/runner/work/vc-api-issuer-test-suite/vc-api-issuer-test-suite/tests/10-issuer.js:120:11)
-                        at process.processTicksAndRejections (node:internal/process/task_queues:95:5)</pre>
-                      </details>
                     </div>
                   </td>
                   <td class="passed not-optional highlight-on-hover text-center">
@@ -1013,11 +1068,15 @@
                     <div class= "highlight-on-hover">❌</div>
                     <div class="relative-pos">
                       <details class="err hide">
-                        <summary>Expected status code 400 or 422.: expected 500 to be one of [ 400, 422 ]</summary>
-                        <pre>AssertionError: Expected status code 400 or 422.: expected 500 to be one of [ 400, 422 ]
-                        at shouldThrowInvalidInput (file:///home/runner/work/vc-api-issuer-test-suite/vc-api-issuer-test-suite/tests/assertions.js:14:26)
-                        at Context.&lt;anonymous&gt; (file:///home/runner/work/vc-api-issuer-test-suite/vc-api-issuer-test-suite/tests/10-issuer.js:131:9)
-                        at process.processTicksAndRejections (node:internal/process/task_queues:95:5)</pre>
+                        <summary>Cannot construct a Request with a Request object that has already been used.</summary>
+                        <pre>TypeError: Cannot construct a Request with a Request object that has already been used.
+                        at new Request (node:internal/deps/undici/undici:9721:19)
+                        at _sanitizeErrorHeaders (file:///home/runner/work/vc-api-issuer-test-suite/vc-api-issuer-test-suite/node_modules/vc-test-suite-implementations/lib/requests.js:131:21)
+                        at makeHttpsRequest (file:///home/runner/work/vc-api-issuer-test-suite/vc-api-issuer-test-suite/node_modules/vc-test-suite-implementations/lib/requests.js:50:13)
+                        at runNextTicks (node:internal/process/task_queues:60:5)
+                        at listOnTimeout (node:internal/timers:545:9)
+                        at process.processTimers (node:internal/timers:519:7)
+                        at async Context.&lt;anonymous&gt; (file:///home/runner/work/vc-api-issuer-test-suite/vc-api-issuer-test-suite/tests/10-issuer.js:130:33)</pre>
                       </details>
                     </div>
                   </td>
@@ -1035,9 +1094,10 @@
                     <div class= "highlight-on-hover">❌</div>
                     <div class="relative-pos">
                       <details class="err hide">
-                        <summary>Expected status code 400 or 422.: expected 403 to be one of [ 400, 422 ]</summary>
-                        <pre>AssertionError: Expected status code 400 or 422.: expected 403 to be one of [ 400, 422 ]
-                        at shouldThrowInvalidInput (file:///home/runner/work/vc-api-issuer-test-suite/vc-api-issuer-test-suite/tests/assertions.js:14:26)
+                        <summary>Expected no result from issuer.: expected Response { status: 201, statusText: &#x27;Created&#x27;, headers: Headers { &#x27;cache-control&#x27;: &#x27;no-cache, no-store, must-revalidate&#x27;, pragma: &#x27;no-cache&#x27;, expires: &#x27;0&#x27;, vary: &#x27;X-HTTP-Method-Override, Accept-Encoding&#x27;, &#x27;access-control-allow-origin&#x27;: &#x27;*&#x27;, &#x27;content-type&#x27;: &#x27;application/json; charset&#x3D;utf-8&#x27;, etag: &#x27;W/&quot;2ec-0+I9YG/HqKraaTrgpqmhGc9FmYg&quot;&#x27;, &#x27;x-cloud-trace-context&#x27;: &#x27;ffc930e701ae8cb473beb9a20c68c623&#x27;, date: &#x27;Mon, 02 Dec 2024 19:04:43 GMT&#x27;, server: &#x27;Google Frontend&#x27;, &#x27;content-length&#x27;: &#x27;748&#x27;, via: &#x27;1.1 google&#x27;, &#x27;alt-svc&#x27;: &#x27;h3&#x3D;&quot;:443&quot;; ma&#x3D;2592000,h3-29&#x3D;&quot;:443&quot;; ma&#x3D;2592000&#x27;, Authorization: &#x27;** SANITIZED TO PREVENT EXPOSING OF SECRETS ***&#x27; }, body: ReadableStream { locked: false, state: &#x27;readable&#x27;, supportsBYOB: true }, bodyUsed: false, ok: true, redirected: false, type: &#x27;default&#x27;, url: &#x27;&#x27; } to not exist</summary>
+                        <pre>AssertionError: Expected no result from issuer.: expected Response { status: 201, statusText: &#x27;Created&#x27;, headers: Headers { &#x27;cache-control&#x27;: &#x27;no-cache, no-store, must-revalidate&#x27;, pragma: &#x27;no-cache&#x27;, expires: &#x27;0&#x27;, vary: &#x27;X-HTTP-Method-Override, Accept-Encoding&#x27;, &#x27;access-control-allow-origin&#x27;: &#x27;*&#x27;, &#x27;content-type&#x27;: &#x27;application/json; charset&#x3D;utf-8&#x27;, etag: &#x27;W/&quot;2ec-0+I9YG/HqKraaTrgpqmhGc9FmYg&quot;&#x27;, &#x27;x-cloud-trace-context&#x27;: &#x27;ffc930e701ae8cb473beb9a20c68c623&#x27;, date: &#x27;Mon, 02 Dec 2024 19:04:43 GMT&#x27;, server: &#x27;Google Frontend&#x27;, &#x27;content-length&#x27;: &#x27;748&#x27;, via: &#x27;1.1 google&#x27;, &#x27;alt-svc&#x27;: &#x27;h3&#x3D;&quot;:443&quot;; ma&#x3D;2592000,h3-29&#x3D;&quot;:443&quot;; ma&#x3D;2592000&#x27;, Authorization: &#x27;** SANITIZED TO PREVENT EXPOSING OF SECRETS ***&#x27; }, body: ReadableStream { locked: false, state: &#x27;readable&#x27;, supportsBYOB: true }, bodyUsed: false, ok: true, redirected: false, type: &#x27;default&#x27;, url: &#x27;&#x27; } to not exist
+                        at should.not.exist (node_modules/chai/lib/chai/interface/should.js:208:38)
+                        at shouldThrowInvalidInput (file:///home/runner/work/vc-api-issuer-test-suite/vc-api-issuer-test-suite/tests/assertions.js:9:14)
                         at Context.&lt;anonymous&gt; (file:///home/runner/work/vc-api-issuer-test-suite/vc-api-issuer-test-suite/tests/10-issuer.js:131:9)
                         at process.processTicksAndRejections (node:internal/process/task_queues:95:5)</pre>
                       </details>
@@ -1115,11 +1175,15 @@
                     <div class= "highlight-on-hover">❌</div>
                     <div class="relative-pos">
                       <details class="err hide">
-                        <summary>Expected status code 400 or 422.: expected 500 to be one of [ 400, 422 ]</summary>
-                        <pre>AssertionError: Expected status code 400 or 422.: expected 500 to be one of [ 400, 422 ]
-                        at shouldThrowInvalidInput (file:///home/runner/work/vc-api-issuer-test-suite/vc-api-issuer-test-suite/tests/assertions.js:14:26)
-                        at Context.&lt;anonymous&gt; (file:///home/runner/work/vc-api-issuer-test-suite/vc-api-issuer-test-suite/tests/10-issuer.js:143:11)
-                        at process.processTicksAndRejections (node:internal/process/task_queues:95:5)</pre>
+                        <summary>Cannot construct a Request with a Request object that has already been used.</summary>
+                        <pre>TypeError: Cannot construct a Request with a Request object that has already been used.
+                        at new Request (node:internal/deps/undici/undici:9721:19)
+                        at _sanitizeErrorHeaders (file:///home/runner/work/vc-api-issuer-test-suite/vc-api-issuer-test-suite/node_modules/vc-test-suite-implementations/lib/requests.js:131:21)
+                        at makeHttpsRequest (file:///home/runner/work/vc-api-issuer-test-suite/vc-api-issuer-test-suite/node_modules/vc-test-suite-implementations/lib/requests.js:50:13)
+                        at runNextTicks (node:internal/process/task_queues:60:5)
+                        at listOnTimeout (node:internal/timers:545:9)
+                        at process.processTimers (node:internal/timers:519:7)
+                        at async Context.&lt;anonymous&gt; (file:///home/runner/work/vc-api-issuer-test-suite/vc-api-issuer-test-suite/tests/10-issuer.js:142:35)</pre>
                       </details>
                     </div>
                   </td>
@@ -1144,9 +1208,10 @@
                     <div class= "highlight-on-hover">❌</div>
                     <div class="relative-pos">
                       <details class="err hide">
-                        <summary>Expected status code 400 or 422.: expected 403 to be one of [ 400, 422 ]</summary>
-                        <pre>AssertionError: Expected status code 400 or 422.: expected 403 to be one of [ 400, 422 ]
-                        at shouldThrowInvalidInput (file:///home/runner/work/vc-api-issuer-test-suite/vc-api-issuer-test-suite/tests/assertions.js:14:26)
+                        <summary>Expected no result from issuer.: expected Response { status: 201, statusText: &#x27;Created&#x27;, headers: Headers { &#x27;cache-control&#x27;: &#x27;no-cache, no-store, must-revalidate&#x27;, pragma: &#x27;no-cache&#x27;, expires: &#x27;0&#x27;, vary: &#x27;X-HTTP-Method-Override, Accept-Encoding&#x27;, &#x27;access-control-allow-origin&#x27;: &#x27;*&#x27;, &#x27;content-type&#x27;: &#x27;application/json; charset&#x3D;utf-8&#x27;, etag: &#x27;W/&quot;2f3-E2t+kFHoZE6IdgG9Y9SqoGU2O28&quot;&#x27;, &#x27;x-cloud-trace-context&#x27;: &#x27;1cfe798f5a4dd7e222b6734790f0281d&#x27;, date: &#x27;Mon, 02 Dec 2024 19:04:43 GMT&#x27;, server: &#x27;Google Frontend&#x27;, &#x27;content-length&#x27;: &#x27;755&#x27;, via: &#x27;1.1 google&#x27;, &#x27;alt-svc&#x27;: &#x27;h3&#x3D;&quot;:443&quot;; ma&#x3D;2592000,h3-29&#x3D;&quot;:443&quot;; ma&#x3D;2592000&#x27;, Authorization: &#x27;** SANITIZED TO PREVENT EXPOSING OF SECRETS ***&#x27; }, body: ReadableStream { locked: false, state: &#x27;readable&#x27;, supportsBYOB: true }, bodyUsed: false, ok: true, redirected: false, type: &#x27;default&#x27;, url: &#x27;&#x27; } to not exist</summary>
+                        <pre>AssertionError: Expected no result from issuer.: expected Response { status: 201, statusText: &#x27;Created&#x27;, headers: Headers { &#x27;cache-control&#x27;: &#x27;no-cache, no-store, must-revalidate&#x27;, pragma: &#x27;no-cache&#x27;, expires: &#x27;0&#x27;, vary: &#x27;X-HTTP-Method-Override, Accept-Encoding&#x27;, &#x27;access-control-allow-origin&#x27;: &#x27;*&#x27;, &#x27;content-type&#x27;: &#x27;application/json; charset&#x3D;utf-8&#x27;, etag: &#x27;W/&quot;2f3-E2t+kFHoZE6IdgG9Y9SqoGU2O28&quot;&#x27;, &#x27;x-cloud-trace-context&#x27;: &#x27;1cfe798f5a4dd7e222b6734790f0281d&#x27;, date: &#x27;Mon, 02 Dec 2024 19:04:43 GMT&#x27;, server: &#x27;Google Frontend&#x27;, &#x27;content-length&#x27;: &#x27;755&#x27;, via: &#x27;1.1 google&#x27;, &#x27;alt-svc&#x27;: &#x27;h3&#x3D;&quot;:443&quot;; ma&#x3D;2592000,h3-29&#x3D;&quot;:443&quot;; ma&#x3D;2592000&#x27;, Authorization: &#x27;** SANITIZED TO PREVENT EXPOSING OF SECRETS ***&#x27; }, body: ReadableStream { locked: false, state: &#x27;readable&#x27;, supportsBYOB: true }, bodyUsed: false, ok: true, redirected: false, type: &#x27;default&#x27;, url: &#x27;&#x27; } to not exist
+                        at should.not.exist (node_modules/chai/lib/chai/interface/should.js:208:38)
+                        at shouldThrowInvalidInput (file:///home/runner/work/vc-api-issuer-test-suite/vc-api-issuer-test-suite/tests/assertions.js:9:14)
                         at Context.&lt;anonymous&gt; (file:///home/runner/work/vc-api-issuer-test-suite/vc-api-issuer-test-suite/tests/10-issuer.js:143:11)
                         at process.processTicksAndRejections (node:internal/process/task_queues:95:5)</pre>
                       </details>
@@ -1224,11 +1289,15 @@
                     <div class= "highlight-on-hover">❌</div>
                     <div class="relative-pos">
                       <details class="err hide">
-                        <summary>Expected status code 400 or 422.: expected 500 to be one of [ 400, 422 ]</summary>
-                        <pre>AssertionError: Expected status code 400 or 422.: expected 500 to be one of [ 400, 422 ]
-                        at shouldThrowInvalidInput (file:///home/runner/work/vc-api-issuer-test-suite/vc-api-issuer-test-suite/tests/assertions.js:14:26)
-                        at Context.&lt;anonymous&gt; (file:///home/runner/work/vc-api-issuer-test-suite/vc-api-issuer-test-suite/tests/10-issuer.js:154:9)
-                        at process.processTicksAndRejections (node:internal/process/task_queues:95:5)</pre>
+                        <summary>Cannot construct a Request with a Request object that has already been used.</summary>
+                        <pre>TypeError: Cannot construct a Request with a Request object that has already been used.
+                        at new Request (node:internal/deps/undici/undici:9721:19)
+                        at _sanitizeErrorHeaders (file:///home/runner/work/vc-api-issuer-test-suite/vc-api-issuer-test-suite/node_modules/vc-test-suite-implementations/lib/requests.js:131:21)
+                        at makeHttpsRequest (file:///home/runner/work/vc-api-issuer-test-suite/vc-api-issuer-test-suite/node_modules/vc-test-suite-implementations/lib/requests.js:50:13)
+                        at runNextTicks (node:internal/process/task_queues:60:5)
+                        at listOnTimeout (node:internal/timers:545:9)
+                        at process.processTimers (node:internal/timers:519:7)
+                        at async Context.&lt;anonymous&gt; (file:///home/runner/work/vc-api-issuer-test-suite/vc-api-issuer-test-suite/tests/10-issuer.js:153:33)</pre>
                       </details>
                     </div>
                   </td>
@@ -1242,16 +1311,9 @@
                     <div class="relative-pos">
                     </div>
                   </td>
-                  <td class="failed not-optional highlight-on-hover text-center">
-                    <div class= "highlight-on-hover">❌</div>
+                  <td class="passed not-optional highlight-on-hover text-center">
+                    <div class= "highlight-on-hover">✓</div>
                     <div class="relative-pos">
-                      <details class="err hide">
-                        <summary>Expected status code 400 or 422.: expected 403 to be one of [ 400, 422 ]</summary>
-                        <pre>AssertionError: Expected status code 400 or 422.: expected 403 to be one of [ 400, 422 ]
-                        at shouldThrowInvalidInput (file:///home/runner/work/vc-api-issuer-test-suite/vc-api-issuer-test-suite/tests/assertions.js:14:26)
-                        at Context.&lt;anonymous&gt; (file:///home/runner/work/vc-api-issuer-test-suite/vc-api-issuer-test-suite/tests/10-issuer.js:154:9)
-                        at process.processTicksAndRejections (node:internal/process/task_queues:95:5)</pre>
-                      </details>
                     </div>
                   </td>
                   <td class="passed not-optional highlight-on-hover text-center">
@@ -1326,11 +1388,15 @@
                     <div class= "highlight-on-hover">❌</div>
                     <div class="relative-pos">
                       <details class="err hide">
-                        <summary>Expected status code 400 or 422.: expected 500 to be one of [ 400, 422 ]</summary>
-                        <pre>AssertionError: Expected status code 400 or 422.: expected 500 to be one of [ 400, 422 ]
-                        at shouldThrowInvalidInput (file:///home/runner/work/vc-api-issuer-test-suite/vc-api-issuer-test-suite/tests/assertions.js:14:26)
-                        at Context.&lt;anonymous&gt; (file:///home/runner/work/vc-api-issuer-test-suite/vc-api-issuer-test-suite/tests/10-issuer.js:168:11)
-                        at process.processTicksAndRejections (node:internal/process/task_queues:95:5)</pre>
+                        <summary>Cannot construct a Request with a Request object that has already been used.</summary>
+                        <pre>TypeError: Cannot construct a Request with a Request object that has already been used.
+                        at new Request (node:internal/deps/undici/undici:9721:19)
+                        at _sanitizeErrorHeaders (file:///home/runner/work/vc-api-issuer-test-suite/vc-api-issuer-test-suite/node_modules/vc-test-suite-implementations/lib/requests.js:131:21)
+                        at makeHttpsRequest (file:///home/runner/work/vc-api-issuer-test-suite/vc-api-issuer-test-suite/node_modules/vc-test-suite-implementations/lib/requests.js:50:13)
+                        at runNextTicks (node:internal/process/task_queues:60:5)
+                        at listOnTimeout (node:internal/timers:545:9)
+                        at process.processTimers (node:internal/timers:519:7)
+                        at async Context.&lt;anonymous&gt; (file:///home/runner/work/vc-api-issuer-test-suite/vc-api-issuer-test-suite/tests/10-issuer.js:167:35)</pre>
                       </details>
                     </div>
                   </td>
@@ -1338,8 +1404,8 @@
                     <div class= "highlight-on-hover">❌</div>
                     <div class="relative-pos">
                       <details class="err hide">
-                        <summary>Expected no result from issuer.: expected Response { status: 201, statusText: &#x27;Created&#x27;, headers: Headers { &#x27;content-type&#x27;: &#x27;application/ld+json&#x27;, &#x27;x-cloud-trace-context&#x27;: &#x27;aca9bfde6927cc8b2b28b723cc10ff98&#x27;, date: &#x27;Sun, 01 Dec 2024 05:10:14 GMT&#x27;, server: &#x27;Google Frontend&#x27;, &#x27;content-length&#x27;: &#x27;680&#x27;, Authorization: &#x27;** SANITIZED TO PREVENT EXPOSING OF SECRETS ***&#x27; }, body: ReadableStream { locked: false, state: &#x27;readable&#x27;, supportsBYOB: true }, bodyUsed: false, ok: true, redirected: false, type: &#x27;default&#x27;, url: &#x27;&#x27; } to not exist</summary>
-                        <pre>AssertionError: Expected no result from issuer.: expected Response { status: 201, statusText: &#x27;Created&#x27;, headers: Headers { &#x27;content-type&#x27;: &#x27;application/ld+json&#x27;, &#x27;x-cloud-trace-context&#x27;: &#x27;aca9bfde6927cc8b2b28b723cc10ff98&#x27;, date: &#x27;Sun, 01 Dec 2024 05:10:14 GMT&#x27;, server: &#x27;Google Frontend&#x27;, &#x27;content-length&#x27;: &#x27;680&#x27;, Authorization: &#x27;** SANITIZED TO PREVENT EXPOSING OF SECRETS ***&#x27; }, body: ReadableStream { locked: false, state: &#x27;readable&#x27;, supportsBYOB: true }, bodyUsed: false, ok: true, redirected: false, type: &#x27;default&#x27;, url: &#x27;&#x27; } to not exist
+                        <summary>Expected no result from issuer.: expected Response { status: 201, statusText: &#x27;Created&#x27;, headers: Headers { &#x27;content-type&#x27;: &#x27;application/ld+json&#x27;, &#x27;x-cloud-trace-context&#x27;: &#x27;269cd8b0077720a0e406d585aef3a367&#x27;, date: &#x27;Mon, 02 Dec 2024 19:04:36 GMT&#x27;, server: &#x27;Google Frontend&#x27;, &#x27;content-length&#x27;: &#x27;681&#x27;, Authorization: &#x27;** SANITIZED TO PREVENT EXPOSING OF SECRETS ***&#x27; }, body: ReadableStream { locked: false, state: &#x27;readable&#x27;, supportsBYOB: true }, bodyUsed: false, ok: true, redirected: false, type: &#x27;default&#x27;, url: &#x27;&#x27; } to not exist</summary>
+                        <pre>AssertionError: Expected no result from issuer.: expected Response { status: 201, statusText: &#x27;Created&#x27;, headers: Headers { &#x27;content-type&#x27;: &#x27;application/ld+json&#x27;, &#x27;x-cloud-trace-context&#x27;: &#x27;269cd8b0077720a0e406d585aef3a367&#x27;, date: &#x27;Mon, 02 Dec 2024 19:04:36 GMT&#x27;, server: &#x27;Google Frontend&#x27;, &#x27;content-length&#x27;: &#x27;681&#x27;, Authorization: &#x27;** SANITIZED TO PREVENT EXPOSING OF SECRETS ***&#x27; }, body: ReadableStream { locked: false, state: &#x27;readable&#x27;, supportsBYOB: true }, bodyUsed: false, ok: true, redirected: false, type: &#x27;default&#x27;, url: &#x27;&#x27; } to not exist
                         at should.not.exist (node_modules/chai/lib/chai/interface/should.js:208:38)
                         at shouldThrowInvalidInput (file:///home/runner/work/vc-api-issuer-test-suite/vc-api-issuer-test-suite/tests/assertions.js:9:14)
                         at Context.&lt;anonymous&gt; (file:///home/runner/work/vc-api-issuer-test-suite/vc-api-issuer-test-suite/tests/10-issuer.js:168:11)
@@ -1352,16 +1418,9 @@
                     <div class="relative-pos">
                     </div>
                   </td>
-                  <td class="failed not-optional highlight-on-hover text-center">
-                    <div class= "highlight-on-hover">❌</div>
+                  <td class="passed not-optional highlight-on-hover text-center">
+                    <div class= "highlight-on-hover">✓</div>
                     <div class="relative-pos">
-                      <details class="err hide">
-                        <summary>Expected status code 400 or 422.: expected 403 to be one of [ 400, 422 ]</summary>
-                        <pre>AssertionError: Expected status code 400 or 422.: expected 403 to be one of [ 400, 422 ]
-                        at shouldThrowInvalidInput (file:///home/runner/work/vc-api-issuer-test-suite/vc-api-issuer-test-suite/tests/assertions.js:14:26)
-                        at Context.&lt;anonymous&gt; (file:///home/runner/work/vc-api-issuer-test-suite/vc-api-issuer-test-suite/tests/10-issuer.js:168:11)
-                        at process.processTicksAndRejections (node:internal/process/task_queues:95:5)</pre>
-                      </details>
                     </div>
                   </td>
                   <td class="passed not-optional highlight-on-hover text-center">
@@ -1436,12 +1495,15 @@
                     <div class= "highlight-on-hover">❌</div>
                     <div class="relative-pos">
                       <details class="err hide">
-                        <summary>Expected no error, got Request failed with status code 500 Internal Server Error: expected HTTPError: Request failed with status cod… { …(5) } to not exist</summary>
-                        <pre>AssertionError: Expected no error, got Request failed with status code 500 Internal Server Error: expected HTTPError: Request failed with status cod… { …(5) } to not exist
-                        at should.not.exist (node_modules/chai/lib/chai/interface/should.js:208:38)
-                        at shouldReturnResult (file:///home/runner/work/vc-api-issuer-test-suite/vc-api-issuer-test-suite/tests/assertions.js:19:14)
-                        at Context.&lt;anonymous&gt; (file:///home/runner/work/vc-api-issuer-test-suite/vc-api-issuer-test-suite/tests/10-issuer.js:193:9)
-                        at process.processTicksAndRejections (node:internal/process/task_queues:95:5)</pre>
+                        <summary>Cannot construct a Request with a Request object that has already been used.</summary>
+                        <pre>TypeError: Cannot construct a Request with a Request object that has already been used.
+                        at new Request (node:internal/deps/undici/undici:9721:19)
+                        at _sanitizeErrorHeaders (file:///home/runner/work/vc-api-issuer-test-suite/vc-api-issuer-test-suite/node_modules/vc-test-suite-implementations/lib/requests.js:131:21)
+                        at makeHttpsRequest (file:///home/runner/work/vc-api-issuer-test-suite/vc-api-issuer-test-suite/node_modules/vc-test-suite-implementations/lib/requests.js:50:13)
+                        at runNextTicks (node:internal/process/task_queues:60:5)
+                        at listOnTimeout (node:internal/timers:545:9)
+                        at process.processTimers (node:internal/timers:519:7)
+                        at async Context.&lt;anonymous&gt; (file:///home/runner/work/vc-api-issuer-test-suite/vc-api-issuer-test-suite/tests/10-issuer.js:192:33)</pre>
                       </details>
                     </div>
                   </td>
@@ -1455,17 +1517,9 @@
                     <div class="relative-pos">
                     </div>
                   </td>
-                  <td class="failed not-optional highlight-on-hover text-center">
-                    <div class= "highlight-on-hover">❌</div>
+                  <td class="passed not-optional highlight-on-hover text-center">
+                    <div class= "highlight-on-hover">✓</div>
                     <div class="relative-pos">
-                      <details class="err hide">
-                        <summary>Expected no error, got Authorization error.: expected HTTPError: Authorization error. { …(6) } to not exist</summary>
-                        <pre>AssertionError: Expected no error, got Authorization error.: expected HTTPError: Authorization error. { …(6) } to not exist
-                        at should.not.exist (node_modules/chai/lib/chai/interface/should.js:208:38)
-                        at shouldReturnResult (file:///home/runner/work/vc-api-issuer-test-suite/vc-api-issuer-test-suite/tests/assertions.js:19:14)
-                        at Context.&lt;anonymous&gt; (file:///home/runner/work/vc-api-issuer-test-suite/vc-api-issuer-test-suite/tests/10-issuer.js:193:9)
-                        at process.processTicksAndRejections (node:internal/process/task_queues:95:5)</pre>
-                      </details>
                     </div>
                   </td>
                   <td class="passed not-optional highlight-on-hover text-center">
