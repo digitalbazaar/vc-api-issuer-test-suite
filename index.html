@@ -169,13 +169,13 @@
     <section class="informative" id="conformance-testing-results">
       <h2> Conformance Testing Results </h2>
       <p>
-      Tests passed 135/170 79%
+      Tests passed 136/170 80%
       </p>
       <p>
-      Tests failed 35/170 21%
+      Tests failed 34/170 20%
       </p>
       <p>
-      Failures 35
+      Failures 34
       </p>
       <p>
       Tests skipped 12
@@ -184,7 +184,7 @@
       Total tests 182
       </p>
       <p>
-        These tests were run on <time>2 December 2024 at 7:37 pm UTC</time>
+        These tests were run on <time>2 December 2024 at 8:47 pm UTC</time>
       </p>
       <section class="informative" id="Key">
         <h3>Key</h3>
@@ -267,17 +267,9 @@
                     MUST successfully issue a credential.
                 </td>
                 <!--These contain if the test passed, failed, or was skipped-->
-                  <td class="failed not-optional highlight-on-hover text-center">
-                    <div class= "highlight-on-hover">❌</div>
+                  <td class="passed not-optional highlight-on-hover text-center">
+                    <div class= "highlight-on-hover">✓</div>
                     <div class="relative-pos">
-                      <details class="err hide">
-                        <summary>Expected no error, got Unknown DID: did:key:z6MkkQivZZ25XQRsmF6br5cbRYuQqn18PigKCaLHi8qSF251: expected HTTPError: Unknown DID: did:key:z6MkkQivZ… { …(6) } to not exist</summary>
-                        <pre>AssertionError: Expected no error, got Unknown DID: did:key:z6MkkQivZZ25XQRsmF6br5cbRYuQqn18PigKCaLHi8qSF251: expected HTTPError: Unknown DID: did:key:z6MkkQivZ… { …(6) } to not exist
-                        at should.not.exist (node_modules/chai/lib/chai/interface/should.js:208:38)
-                        at shouldReturnResult (file:///home/runner/work/vc-api-issuer-test-suite/vc-api-issuer-test-suite/tests/assertions.js:19:14)
-                        at Context.&lt;anonymous&gt; (file:///home/runner/work/vc-api-issuer-test-suite/vc-api-issuer-test-suite/tests/10-issuer.js:41:9)
-                        at process.processTicksAndRejections (node:internal/process/task_queues:95:5)</pre>
-                      </details>
                     </div>
                   </td>
                   <td class="passed not-optional highlight-on-hover text-center">
@@ -1013,8 +1005,8 @@
                     <div class= "highlight-on-hover">❌</div>
                     <div class="relative-pos">
                       <details class="err hide">
-                        <summary>Expected no result from issuer.: expected Response { status: 201, statusText: &#x27;Created&#x27;, headers: Headers { &#x27;cache-control&#x27;: &#x27;no-cache, no-store, must-revalidate&#x27;, pragma: &#x27;no-cache&#x27;, expires: &#x27;0&#x27;, vary: &#x27;X-HTTP-Method-Override, Accept-Encoding&#x27;, &#x27;access-control-allow-origin&#x27;: &#x27;*&#x27;, &#x27;content-type&#x27;: &#x27;application/json; charset&#x3D;utf-8&#x27;, etag: &#x27;W/&quot;2eb-YspkQZW7JA6XYgCe8ZjNqaZq9/k&quot;&#x27;, &#x27;x-cloud-trace-context&#x27;: &#x27;630fc8479c97d72d018e3214bc831c82&#x27;, date: &#x27;Mon, 02 Dec 2024 19:37:06 GMT&#x27;, server: &#x27;Google Frontend&#x27;, &#x27;content-length&#x27;: &#x27;747&#x27;, via: &#x27;1.1 google&#x27;, &#x27;alt-svc&#x27;: &#x27;h3&#x3D;&quot;:443&quot;; ma&#x3D;2592000,h3-29&#x3D;&quot;:443&quot;; ma&#x3D;2592000&#x27;, Authorization: &#x27;** SANITIZED TO PREVENT EXPOSING OF SECRETS ***&#x27; }, body: ReadableStream { locked: false, state: &#x27;readable&#x27;, supportsBYOB: true }, bodyUsed: false, ok: true, redirected: false, type: &#x27;default&#x27;, url: &#x27;&#x27; } to not exist</summary>
-                        <pre>AssertionError: Expected no result from issuer.: expected Response { status: 201, statusText: &#x27;Created&#x27;, headers: Headers { &#x27;cache-control&#x27;: &#x27;no-cache, no-store, must-revalidate&#x27;, pragma: &#x27;no-cache&#x27;, expires: &#x27;0&#x27;, vary: &#x27;X-HTTP-Method-Override, Accept-Encoding&#x27;, &#x27;access-control-allow-origin&#x27;: &#x27;*&#x27;, &#x27;content-type&#x27;: &#x27;application/json; charset&#x3D;utf-8&#x27;, etag: &#x27;W/&quot;2eb-YspkQZW7JA6XYgCe8ZjNqaZq9/k&quot;&#x27;, &#x27;x-cloud-trace-context&#x27;: &#x27;630fc8479c97d72d018e3214bc831c82&#x27;, date: &#x27;Mon, 02 Dec 2024 19:37:06 GMT&#x27;, server: &#x27;Google Frontend&#x27;, &#x27;content-length&#x27;: &#x27;747&#x27;, via: &#x27;1.1 google&#x27;, &#x27;alt-svc&#x27;: &#x27;h3&#x3D;&quot;:443&quot;; ma&#x3D;2592000,h3-29&#x3D;&quot;:443&quot;; ma&#x3D;2592000&#x27;, Authorization: &#x27;** SANITIZED TO PREVENT EXPOSING OF SECRETS ***&#x27; }, body: ReadableStream { locked: false, state: &#x27;readable&#x27;, supportsBYOB: true }, bodyUsed: false, ok: true, redirected: false, type: &#x27;default&#x27;, url: &#x27;&#x27; } to not exist
+                        <summary>Expected no result from issuer.: expected Response { status: 201, statusText: &#x27;Created&#x27;, headers: Headers { &#x27;cache-control&#x27;: &#x27;no-cache, no-store, must-revalidate&#x27;, pragma: &#x27;no-cache&#x27;, expires: &#x27;0&#x27;, vary: &#x27;X-HTTP-Method-Override, Accept-Encoding&#x27;, &#x27;access-control-allow-origin&#x27;: &#x27;*&#x27;, &#x27;content-type&#x27;: &#x27;application/json; charset&#x3D;utf-8&#x27;, etag: &#x27;W/&quot;2ec-cSSBK0nD1dpYJcdSGv8jXSCbxR0&quot;&#x27;, &#x27;x-cloud-trace-context&#x27;: &#x27;1336caa5601efb9c54226cf462506814&#x27;, date: &#x27;Mon, 02 Dec 2024 20:46:47 GMT&#x27;, server: &#x27;Google Frontend&#x27;, &#x27;content-length&#x27;: &#x27;748&#x27;, via: &#x27;1.1 google&#x27;, &#x27;alt-svc&#x27;: &#x27;h3&#x3D;&quot;:443&quot;; ma&#x3D;2592000,h3-29&#x3D;&quot;:443&quot;; ma&#x3D;2592000&#x27;, Authorization: &#x27;** SANITIZED TO PREVENT EXPOSING OF SECRETS ***&#x27; }, body: ReadableStream { locked: false, state: &#x27;readable&#x27;, supportsBYOB: true }, bodyUsed: false, ok: true, redirected: false, type: &#x27;default&#x27;, url: &#x27;&#x27; } to not exist</summary>
+                        <pre>AssertionError: Expected no result from issuer.: expected Response { status: 201, statusText: &#x27;Created&#x27;, headers: Headers { &#x27;cache-control&#x27;: &#x27;no-cache, no-store, must-revalidate&#x27;, pragma: &#x27;no-cache&#x27;, expires: &#x27;0&#x27;, vary: &#x27;X-HTTP-Method-Override, Accept-Encoding&#x27;, &#x27;access-control-allow-origin&#x27;: &#x27;*&#x27;, &#x27;content-type&#x27;: &#x27;application/json; charset&#x3D;utf-8&#x27;, etag: &#x27;W/&quot;2ec-cSSBK0nD1dpYJcdSGv8jXSCbxR0&quot;&#x27;, &#x27;x-cloud-trace-context&#x27;: &#x27;1336caa5601efb9c54226cf462506814&#x27;, date: &#x27;Mon, 02 Dec 2024 20:46:47 GMT&#x27;, server: &#x27;Google Frontend&#x27;, &#x27;content-length&#x27;: &#x27;748&#x27;, via: &#x27;1.1 google&#x27;, &#x27;alt-svc&#x27;: &#x27;h3&#x3D;&quot;:443&quot;; ma&#x3D;2592000,h3-29&#x3D;&quot;:443&quot;; ma&#x3D;2592000&#x27;, Authorization: &#x27;** SANITIZED TO PREVENT EXPOSING OF SECRETS ***&#x27; }, body: ReadableStream { locked: false, state: &#x27;readable&#x27;, supportsBYOB: true }, bodyUsed: false, ok: true, redirected: false, type: &#x27;default&#x27;, url: &#x27;&#x27; } to not exist
                         at should.not.exist (node_modules/chai/lib/chai/interface/should.js:208:38)
                         at shouldThrowInvalidInput (file:///home/runner/work/vc-api-issuer-test-suite/vc-api-issuer-test-suite/tests/assertions.js:9:14)
                         at Context.&lt;anonymous&gt; (file:///home/runner/work/vc-api-issuer-test-suite/vc-api-issuer-test-suite/tests/10-issuer.js:131:9)
@@ -1116,8 +1108,8 @@
                     <div class= "highlight-on-hover">❌</div>
                     <div class="relative-pos">
                       <details class="err hide">
-                        <summary>Expected no result from issuer.: expected Response { status: 201, statusText: &#x27;Created&#x27;, headers: Headers { &#x27;cache-control&#x27;: &#x27;no-cache, no-store, must-revalidate&#x27;, pragma: &#x27;no-cache&#x27;, expires: &#x27;0&#x27;, vary: &#x27;X-HTTP-Method-Override, Accept-Encoding&#x27;, &#x27;access-control-allow-origin&#x27;: &#x27;*&#x27;, &#x27;content-type&#x27;: &#x27;application/json; charset&#x3D;utf-8&#x27;, etag: &#x27;W/&quot;2f3-gPsumBoAYDEldXlb+k7LhkZzKJE&quot;&#x27;, &#x27;x-cloud-trace-context&#x27;: &#x27;0291b6389d356fcf63d34816bed7fb0d&#x27;, date: &#x27;Mon, 02 Dec 2024 19:37:06 GMT&#x27;, server: &#x27;Google Frontend&#x27;, &#x27;content-length&#x27;: &#x27;755&#x27;, via: &#x27;1.1 google&#x27;, &#x27;alt-svc&#x27;: &#x27;h3&#x3D;&quot;:443&quot;; ma&#x3D;2592000,h3-29&#x3D;&quot;:443&quot;; ma&#x3D;2592000&#x27;, Authorization: &#x27;** SANITIZED TO PREVENT EXPOSING OF SECRETS ***&#x27; }, body: ReadableStream { locked: false, state: &#x27;readable&#x27;, supportsBYOB: true }, bodyUsed: false, ok: true, redirected: false, type: &#x27;default&#x27;, url: &#x27;&#x27; } to not exist</summary>
-                        <pre>AssertionError: Expected no result from issuer.: expected Response { status: 201, statusText: &#x27;Created&#x27;, headers: Headers { &#x27;cache-control&#x27;: &#x27;no-cache, no-store, must-revalidate&#x27;, pragma: &#x27;no-cache&#x27;, expires: &#x27;0&#x27;, vary: &#x27;X-HTTP-Method-Override, Accept-Encoding&#x27;, &#x27;access-control-allow-origin&#x27;: &#x27;*&#x27;, &#x27;content-type&#x27;: &#x27;application/json; charset&#x3D;utf-8&#x27;, etag: &#x27;W/&quot;2f3-gPsumBoAYDEldXlb+k7LhkZzKJE&quot;&#x27;, &#x27;x-cloud-trace-context&#x27;: &#x27;0291b6389d356fcf63d34816bed7fb0d&#x27;, date: &#x27;Mon, 02 Dec 2024 19:37:06 GMT&#x27;, server: &#x27;Google Frontend&#x27;, &#x27;content-length&#x27;: &#x27;755&#x27;, via: &#x27;1.1 google&#x27;, &#x27;alt-svc&#x27;: &#x27;h3&#x3D;&quot;:443&quot;; ma&#x3D;2592000,h3-29&#x3D;&quot;:443&quot;; ma&#x3D;2592000&#x27;, Authorization: &#x27;** SANITIZED TO PREVENT EXPOSING OF SECRETS ***&#x27; }, body: ReadableStream { locked: false, state: &#x27;readable&#x27;, supportsBYOB: true }, bodyUsed: false, ok: true, redirected: false, type: &#x27;default&#x27;, url: &#x27;&#x27; } to not exist
+                        <summary>Expected no result from issuer.: expected Response { status: 201, statusText: &#x27;Created&#x27;, headers: Headers { &#x27;cache-control&#x27;: &#x27;no-cache, no-store, must-revalidate&#x27;, pragma: &#x27;no-cache&#x27;, expires: &#x27;0&#x27;, vary: &#x27;X-HTTP-Method-Override, Accept-Encoding&#x27;, &#x27;access-control-allow-origin&#x27;: &#x27;*&#x27;, &#x27;content-type&#x27;: &#x27;application/json; charset&#x3D;utf-8&#x27;, etag: &#x27;W/&quot;2f3-tusD0Jm2wIqKF62/4EHKdYTx3dc&quot;&#x27;, &#x27;x-cloud-trace-context&#x27;: &#x27;96809a400cda634590dbe9482c20f106&#x27;, date: &#x27;Mon, 02 Dec 2024 20:46:47 GMT&#x27;, server: &#x27;Google Frontend&#x27;, &#x27;content-length&#x27;: &#x27;755&#x27;, via: &#x27;1.1 google&#x27;, &#x27;alt-svc&#x27;: &#x27;h3&#x3D;&quot;:443&quot;; ma&#x3D;2592000,h3-29&#x3D;&quot;:443&quot;; ma&#x3D;2592000&#x27;, Authorization: &#x27;** SANITIZED TO PREVENT EXPOSING OF SECRETS ***&#x27; }, body: ReadableStream { locked: false, state: &#x27;readable&#x27;, supportsBYOB: true }, bodyUsed: false, ok: true, redirected: false, type: &#x27;default&#x27;, url: &#x27;&#x27; } to not exist</summary>
+                        <pre>AssertionError: Expected no result from issuer.: expected Response { status: 201, statusText: &#x27;Created&#x27;, headers: Headers { &#x27;cache-control&#x27;: &#x27;no-cache, no-store, must-revalidate&#x27;, pragma: &#x27;no-cache&#x27;, expires: &#x27;0&#x27;, vary: &#x27;X-HTTP-Method-Override, Accept-Encoding&#x27;, &#x27;access-control-allow-origin&#x27;: &#x27;*&#x27;, &#x27;content-type&#x27;: &#x27;application/json; charset&#x3D;utf-8&#x27;, etag: &#x27;W/&quot;2f3-tusD0Jm2wIqKF62/4EHKdYTx3dc&quot;&#x27;, &#x27;x-cloud-trace-context&#x27;: &#x27;96809a400cda634590dbe9482c20f106&#x27;, date: &#x27;Mon, 02 Dec 2024 20:46:47 GMT&#x27;, server: &#x27;Google Frontend&#x27;, &#x27;content-length&#x27;: &#x27;755&#x27;, via: &#x27;1.1 google&#x27;, &#x27;alt-svc&#x27;: &#x27;h3&#x3D;&quot;:443&quot;; ma&#x3D;2592000,h3-29&#x3D;&quot;:443&quot;; ma&#x3D;2592000&#x27;, Authorization: &#x27;** SANITIZED TO PREVENT EXPOSING OF SECRETS ***&#x27; }, body: ReadableStream { locked: false, state: &#x27;readable&#x27;, supportsBYOB: true }, bodyUsed: false, ok: true, redirected: false, type: &#x27;default&#x27;, url: &#x27;&#x27; } to not exist
                         at should.not.exist (node_modules/chai/lib/chai/interface/should.js:208:38)
                         at shouldThrowInvalidInput (file:///home/runner/work/vc-api-issuer-test-suite/vc-api-issuer-test-suite/tests/assertions.js:9:14)
                         at Context.&lt;anonymous&gt; (file:///home/runner/work/vc-api-issuer-test-suite/vc-api-issuer-test-suite/tests/10-issuer.js:143:11)
@@ -1281,17 +1273,24 @@
                     &quot;credential.credentialSubject&quot; MUST be an object
                 </td>
                 <!--These contain if the test passed, failed, or was skipped-->
-                  <td class="passed not-optional highlight-on-hover text-center">
-                    <div class= "highlight-on-hover">✓</div>
+                  <td class="failed not-optional highlight-on-hover text-center">
+                    <div class= "highlight-on-hover">❌</div>
                     <div class="relative-pos">
+                      <details class="err hide">
+                        <summary>Expected status code 400 or 422.: expected 500 to be one of [ 400, 422 ]</summary>
+                        <pre>AssertionError: Expected status code 400 or 422.: expected 500 to be one of [ 400, 422 ]
+                        at shouldThrowInvalidInput (file:///home/runner/work/vc-api-issuer-test-suite/vc-api-issuer-test-suite/tests/assertions.js:14:26)
+                        at Context.&lt;anonymous&gt; (file:///home/runner/work/vc-api-issuer-test-suite/vc-api-issuer-test-suite/tests/10-issuer.js:168:11)
+                        at process.processTicksAndRejections (node:internal/process/task_queues:95:5)</pre>
+                      </details>
                     </div>
                   </td>
                   <td class="failed not-optional highlight-on-hover text-center">
                     <div class= "highlight-on-hover">❌</div>
                     <div class="relative-pos">
                       <details class="err hide">
-                        <summary>Expected no result from issuer.: expected Response { status: 201, statusText: &#x27;Created&#x27;, headers: Headers { &#x27;content-type&#x27;: &#x27;application/ld+json&#x27;, &#x27;x-cloud-trace-context&#x27;: &#x27;3a1928758e10bae7a11cf1dd1f0c3e76&#x27;, date: &#x27;Mon, 02 Dec 2024 19:36:58 GMT&#x27;, server: &#x27;Google Frontend&#x27;, &#x27;content-length&#x27;: &#x27;681&#x27;, Authorization: &#x27;** SANITIZED TO PREVENT EXPOSING OF SECRETS ***&#x27; }, body: ReadableStream { locked: false, state: &#x27;readable&#x27;, supportsBYOB: true }, bodyUsed: false, ok: true, redirected: false, type: &#x27;default&#x27;, url: &#x27;&#x27; } to not exist</summary>
-                        <pre>AssertionError: Expected no result from issuer.: expected Response { status: 201, statusText: &#x27;Created&#x27;, headers: Headers { &#x27;content-type&#x27;: &#x27;application/ld+json&#x27;, &#x27;x-cloud-trace-context&#x27;: &#x27;3a1928758e10bae7a11cf1dd1f0c3e76&#x27;, date: &#x27;Mon, 02 Dec 2024 19:36:58 GMT&#x27;, server: &#x27;Google Frontend&#x27;, &#x27;content-length&#x27;: &#x27;681&#x27;, Authorization: &#x27;** SANITIZED TO PREVENT EXPOSING OF SECRETS ***&#x27; }, body: ReadableStream { locked: false, state: &#x27;readable&#x27;, supportsBYOB: true }, bodyUsed: false, ok: true, redirected: false, type: &#x27;default&#x27;, url: &#x27;&#x27; } to not exist
+                        <summary>Expected no result from issuer.: expected Response { status: 201, statusText: &#x27;Created&#x27;, headers: Headers { &#x27;content-type&#x27;: &#x27;application/ld+json&#x27;, &#x27;x-cloud-trace-context&#x27;: &#x27;34abccc0b0848fa2a932b72019c38d73&#x27;, date: &#x27;Mon, 02 Dec 2024 20:46:41 GMT&#x27;, server: &#x27;Google Frontend&#x27;, &#x27;content-length&#x27;: &#x27;680&#x27;, Authorization: &#x27;** SANITIZED TO PREVENT EXPOSING OF SECRETS ***&#x27; }, body: ReadableStream { locked: false, state: &#x27;readable&#x27;, supportsBYOB: true }, bodyUsed: false, ok: true, redirected: false, type: &#x27;default&#x27;, url: &#x27;&#x27; } to not exist</summary>
+                        <pre>AssertionError: Expected no result from issuer.: expected Response { status: 201, statusText: &#x27;Created&#x27;, headers: Headers { &#x27;content-type&#x27;: &#x27;application/ld+json&#x27;, &#x27;x-cloud-trace-context&#x27;: &#x27;34abccc0b0848fa2a932b72019c38d73&#x27;, date: &#x27;Mon, 02 Dec 2024 20:46:41 GMT&#x27;, server: &#x27;Google Frontend&#x27;, &#x27;content-length&#x27;: &#x27;680&#x27;, Authorization: &#x27;** SANITIZED TO PREVENT EXPOSING OF SECRETS ***&#x27; }, body: ReadableStream { locked: false, state: &#x27;readable&#x27;, supportsBYOB: true }, bodyUsed: false, ok: true, redirected: false, type: &#x27;default&#x27;, url: &#x27;&#x27; } to not exist
                         at should.not.exist (node_modules/chai/lib/chai/interface/should.js:208:38)
                         at shouldThrowInvalidInput (file:///home/runner/work/vc-api-issuer-test-suite/vc-api-issuer-test-suite/tests/assertions.js:9:14)
                         at Context.&lt;anonymous&gt; (file:///home/runner/work/vc-api-issuer-test-suite/vc-api-issuer-test-suite/tests/10-issuer.js:168:11)
@@ -1377,17 +1376,9 @@
                     credential MAY have property &quot;expirationDate&quot;
                 </td>
                 <!--These contain if the test passed, failed, or was skipped-->
-                  <td class="failed not-optional highlight-on-hover text-center">
-                    <div class= "highlight-on-hover">❌</div>
+                  <td class="passed not-optional highlight-on-hover text-center">
+                    <div class= "highlight-on-hover">✓</div>
                     <div class="relative-pos">
-                      <details class="err hide">
-                        <summary>Expected no error, got Unknown DID: did:key:z6MkkQivZZ25XQRsmF6br5cbRYuQqn18PigKCaLHi8qSF251: expected HTTPError: Unknown DID: did:key:z6MkkQivZ… { …(6) } to not exist</summary>
-                        <pre>AssertionError: Expected no error, got Unknown DID: did:key:z6MkkQivZZ25XQRsmF6br5cbRYuQqn18PigKCaLHi8qSF251: expected HTTPError: Unknown DID: did:key:z6MkkQivZ… { …(6) } to not exist
-                        at should.not.exist (node_modules/chai/lib/chai/interface/should.js:208:38)
-                        at shouldReturnResult (file:///home/runner/work/vc-api-issuer-test-suite/vc-api-issuer-test-suite/tests/assertions.js:19:14)
-                        at Context.&lt;anonymous&gt; (file:///home/runner/work/vc-api-issuer-test-suite/vc-api-issuer-test-suite/tests/10-issuer.js:193:9)
-                        at process.processTicksAndRejections (node:internal/process/task_queues:95:5)</pre>
-                      </details>
                     </div>
                   </td>
                   <td class="passed not-optional highlight-on-hover text-center">
