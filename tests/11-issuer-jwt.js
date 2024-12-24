@@ -71,13 +71,13 @@ describe('Issue Credential - JWT', function() {
         const {result, error} = await issuer.post({json: body});
         shouldThrowInvalidInput({result, error});
       });
-      it('credential "@context" items MUST be strings.', async function() {
+      it('credential "@context" items MUST be strings or objects.', async function() {
         this.test.cell = {
           columnId: name,
           rowId: this.test.title
         };
         const body = createRequestBody({issuer});
-        const invalidContextTypes = [{foo: true}, 4, false, null];
+        const invalidContextTypes = [4, false, null, []];
         for(const invalidContextType of invalidContextTypes) {
           body.credential['@context'] = invalidContextType;
           const {result, error} = await issuer.post({json: {...body}});
